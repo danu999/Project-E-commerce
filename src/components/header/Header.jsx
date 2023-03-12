@@ -6,7 +6,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import "./Header.scss";
 import Search from "./Search/Search";
 import { Context } from "../../utils/context";
-import Cart from "../Cart/Cart";
+// import Cart from "../Cart/Cart";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll);
     }, []);
 
-    const { cartCount, showCart, setShowCart } = useContext(Context);
+    // const { cartCount, showCart, setShowCart } = useContext(Context);
 
     return (
         <>
@@ -39,23 +39,23 @@ const Header = () => {
                         <li>Categories</li>
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>
-                        JSDEVSTORE.
+                        FRINZCATALOG_
                     </div>
                     <div className="right">
                         <TbSearch onClick={() => setSearchModal(true)} />
                         <AiOutlineHeart />
-                        <span
+                        {/* <span
                             className="cart-icon"
                             onClick={() => setShowCart(true)}
                         >
                             <CgShoppingCart />
                             {!!cartCount && <span>{cartCount}</span>}
-                        </span>
+                        </span> */}
                     </div>
                 </div>
             </header>
             {searchModal && <Search setSearchModal={setSearchModal} />}
-            {showCart && <Cart />}
+            {/* {showCart && <Cart />} */}
         </>
     );
 };
