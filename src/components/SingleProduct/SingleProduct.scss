@@ -103,8 +103,9 @@
                         cursor: pointer;
                         font-size: 16px;
                         color: white;
-                        background: #8e2de2;
-                        border-bottom: 3px solid #6516aa;
+                        background: #1e809e;
+                        border-bottom: 3px solid #080808;
+                        border-radius: 10%;
                         flex-grow: 1;
                         @include md {
                             flex-grow: unset;
