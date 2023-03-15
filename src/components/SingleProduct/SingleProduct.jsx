@@ -75,11 +75,11 @@ const SingleProduct = () => {
               <span className="text-bold">
                 Share:
                 <span className="social-icons">
-                  <FaFacebookF size={16} />
-                  <FaTwitter size={16} />
-                  <FaInstagram size={16} />
-                  <FaLinkedinIn size={16} />
-                  <FaPinterest size={16} />
+                  <FaFacebookF size={16} href="/"/>
+                  <FaTwitter size={16} href="/"/>
+                  <FaInstagram size={16} href="/"/>
+                  <FaLinkedinIn size={16} href="/"/>
+                  <FaPinterest size={16} href="/"/>
                 </span>
               </span>
             </div>
