@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "./Category.scss";
 
-const Category = ({ categories }) => {
+const Category = ({ categories, innerPage, headingText  }) => {
     const navigate = useNavigate();
 
     return (
         <div className="shop-by-category">
+            {!innerPage && <div className="sec-heading">{headingText}</div>}
             <div className="categories">
                 {categories?.data?.map((item) => {
                     console.log(item)

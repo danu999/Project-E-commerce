@@ -35,14 +35,14 @@ const Header = () => {
                     <ul className="left">
                         <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/about")}>About</li>
-                        <li>Categories</li>
+                        <li onClick={() => navigate("/myategories")}>Categories</li>
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>
                         FRINZCATALOG_
                     </div>
                     <div className="right">
                         <TbSearch onClick={() => setSearchModal(true)} />
-                        <AiOutlineHeart />
+                        {/* <AiOutlineHeart /> */}
                         {/* <span
                             className="cart-icon"
                             onClick={() => setShowCart(true)}
@@ -50,6 +50,7 @@ const Header = () => {
                             <CgShoppingCart />
                             {!!cartCount && <span>{cartCount}</span>}
                         </span> */}
+                        Let's Order Via Whatsapp ❤️❤️
                     </div>
                 </div>
             </header>

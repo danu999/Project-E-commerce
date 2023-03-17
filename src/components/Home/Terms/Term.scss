@@ -1,0 +1,18 @@
+@import "../../../css-config/mixins.scss";
+.term {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20rem;
+    margin-top: 3rem;
+}
+
+.text_term {
+    margin-top: 4rem;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}

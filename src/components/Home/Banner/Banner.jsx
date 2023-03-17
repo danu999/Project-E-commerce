@@ -1,9 +1,10 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import "./Banner.scss";
 import BannerImg from "../../../assets/kisspng-sportbanner.png";
 
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <div className="hero-banner">
             <div className="content">
@@ -17,10 +18,10 @@ const Banner = () => {
                         <br/>
                         Thank you
                     </p>
-                    <div className="ctas">
-                        <div className="banner-cta">Read More</div>
-                        <div className="banner-cta v2">Shop Now</div>
-                    </div>
+                    {/* <div className="ctas">
+                        <a onClick={() => navigate("/categories")} className="banner-cta">Let's go</a>
+                        <a onClick={() => navigate("/category/:id")} className="banner-cta v2">Shop Now</a>
+                    </div> */}
                 </div>
                 <img className="banner-img" src={BannerImg} />
             </div>

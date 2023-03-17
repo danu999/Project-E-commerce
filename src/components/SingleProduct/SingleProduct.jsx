@@ -1,3 +1,4 @@
+import React from "react";
 import { useContext, useState } from "react";
 import { Context } from "../../utils/context";
 import { useParams } from "react-router-dom";
@@ -14,20 +15,27 @@ import {
 import "./SingleProduct.scss";
 
 const SingleProduct = () => {
-  const [quantity, setQuantity] = useState(1);
+  
+  // const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
-  const { handleAddToCart } = useContext(Context);
+  // const { handleAddToCart } = useContext(Context);
   const { data } = useFetch(`/api/products?populate=*&[filters][id]=${id}`);
 
-  const decrement = () => {
-    setQuantity((prevState) => {
-      if (prevState === 1) return 1;
-      return prevState - 1;
-    });
+  const handleButtonClick = () => {
+    const phoneNumber = "+6289509374627"; // replace with your own phone number
+    const message = "Hello, Welcome to FRINZSTORE_ how can I help you?"; // replace with your own message
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url);
   };
-  const increment = () => {
-    setQuantity((prevState) => prevState + 1);
-  };
+  // const decrement = () => {
+  //   setQuantity((prevState) => {
+  //     if (prevState === 1) return 1;
+  //     return prevState - 1;
+  //   });
+  // // };
+  // const increment = () => {
+  //   setQuantity((prevState) => prevState + 1);
+  // };
 
   if (!data) return;
   const product = data?.data?.[0]?.attributes;
@@ -57,11 +65,8 @@ const SingleProduct = () => {
                             </div> */}
               <button
                 className="add-to-cart-button"
-                onClick={() => {
-                  handleAddToCart(data?.data?.[0], quantity);
-                  setQuantity(1);
-                }}
-              >
+                onClick={handleButtonClick}
+                >
                 BUY NOW
               </button>
             </div>
@@ -75,11 +80,11 @@ const SingleProduct = () => {
               <span className="text-bold">
                 Share:
                 <span className="social-icons">
-                  <FaFacebookF size={16} href="https://facaebook.com"/>
-                  <FaTwitter size={16} href="https://facaebook.com"/>
-                  <FaInstagram size={16} href="https://facaebook.com"/>
-                  <FaLinkedinIn size={16} href="https://facaebook.com"/>
-                  <FaPinterest size={16} href="https://facaebook.com"/>
+                  <a href="https://web.facebook.com/"><FaFacebookF size={16} /></a>
+                  <a href="https://twitter.com/"><FaTwitter size={16} /></a>
+                  <a href="https://instagram.com"><FaInstagram size={16} /></a>
+                  <a href="https://id.linkedin.com"><FaLinkedinIn size={16} /></a>
+                  <a href="https://id.pinterest.com/"><FaPinterest size={16} /></a>
                 </span>
               </span>
             </div>
