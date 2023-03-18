@@ -28,7 +28,7 @@ const Newsletter = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Send Email Successfully")
+          alert("Send Email Successfully");
           emailInput.value = "";
         },
         (error) => {
@@ -52,16 +52,16 @@ const Newsletter = () => {
           Will be used in accordance with our Privacy Policy
         </span>
         <span className="social-icons">
-          <a href="https://id.linkedin.com" target="_blank" className="icon">
+          <a href="https://id.linkedin.com" className="icon">
             <FaLinkedinIn size={14} />
           </a>
-          <a href="https://web.facebook.com/" target="_blank" className="icon">
+          <a href="https://web.facebook.com/" className="icon">
             <FaFacebookF size={14} />
           </a>
-          <a href="https://twitter.com/" target="_blank" className="icon">
+          <a href="https://twitter.com/" className="icon">
             <FaTwitter size={14} />
           </a>
-          <a href="https://instagram.com" target="_blank" className="icon">
+          <a href="https://instagram.com" className="icon">
             <FaInstagram size={14} />
           </a>
         </span>

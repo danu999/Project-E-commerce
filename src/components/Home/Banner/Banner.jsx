@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./Banner.scss";
 import BannerImg from "../../../assets/AUTHENTIC SREET WEAR.png";
 
 const Banner = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return (
         <div className="hero-banner">
             <div className="content">
@@ -23,7 +23,7 @@ const Banner = () => {
                         <a onClick={() => navigate("/category/:id")} className="banner-cta v2">Shop Now</a>
                     </div> */}
                 </div>
-                <img className="banner-img" src={BannerImg} />
+                <img className="banner-img" src={BannerImg} alt="banner"/>
             </div>
         </div>
     );
