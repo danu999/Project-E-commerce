@@ -9,7 +9,6 @@ const Category = ({ categories, innerPage, headingText  }) => {
             {!innerPage && <div className="sec-heading">{headingText}</div>}
             <div className="categories">
                 {categories?.data?.map((item) => {
-                    console.log(item)
                     return (
                         <div
                             key={item.id}
