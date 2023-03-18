@@ -50,7 +50,7 @@ const Header = () => {
                             <CgShoppingCart />
                             {!!cartCount && <span>{cartCount}</span>}
                         </span> */}
-                        Let's Order Via Whatsapp ❤️❤️
+                        Let's Order Via Whatsapp 🌟🌟
                     </div>
                 </div>
             </header>

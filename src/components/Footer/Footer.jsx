@@ -15,6 +15,15 @@ const Footer = () => {
                         This website only for example ecommerce website,
                         we are group 3 make this project for study e-commerce,
                          please enjoy for this website.
+                         <br/>
+                         <br/>
+                         We are group 3 :
+                         <br/>
+                         DEDE DANU SAPUTRA - 171011450364 <br/>
+                         M SAHRUL          - 191011450438 <br/>
+                         TOMI HIMAWAN      - 191011450380 <br/>
+                         M FATHIN          - 191011450381 <br/>
+                         RIVAN AHMAD FAUZI - 191011450418                        
                     </div>
                 </div>
                 <div className="col">
