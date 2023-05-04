@@ -20,7 +20,7 @@ const Newsletter = () => {
     }
     emailjs
       .sendForm(
-        "service_0rp1ita",
+        "service_xu90gov",
         "template_r06lip9",
         form.current,
         "1p7gFuJALJdPyZ8_N"
