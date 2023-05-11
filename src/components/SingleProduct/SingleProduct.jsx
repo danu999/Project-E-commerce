@@ -15,7 +15,6 @@ import {
 import "./SingleProduct.scss";
 
 const SingleProduct = () => {
-  
   // const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   // const { handleAddToCart } = useContext(Context);
@@ -24,7 +23,9 @@ const SingleProduct = () => {
   const handleButtonClick = () => {
     const phoneNumber = "+6289509374627"; // replace with your own phone number
     const message = "Hello, Welcome to FRINZSTORE_ how can I help you?"; // replace with your own message
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(url);
   };
   // const decrement = () => {
@@ -66,7 +67,7 @@ const SingleProduct = () => {
               <button
                 className="add-to-cart-button"
                 onClick={handleButtonClick}
-                >
+              >
                 BUY NOW
               </button>
             </div>
@@ -80,11 +81,21 @@ const SingleProduct = () => {
               <span className="text-bold">
                 Share:
                 <span className="social-icons">
-                  <a href="https://web.facebook.com/"><FaFacebookF size={16} /></a>
-                  <a href="https://twitter.com/"><FaTwitter size={16} /></a>
-                  <a href="https://instagram.com"><FaInstagram size={16} /></a>
-                  <a href="https://id.linkedin.com"><FaLinkedinIn size={16} /></a>
-                  <a href="https://id.pinterest.com/"><FaPinterest size={16} /></a>
+                  <a href="https://web.facebook.com/">
+                    <FaFacebookF size={16} />
+                  </a>
+                  <a href="https://twitter.com/">
+                    <FaTwitter size={16} />
+                  </a>
+                  <a href="https://instagram.com">
+                    <FaInstagram size={16} />
+                  </a>
+                  <a href="https://id.linkedin.com">
+                    <FaLinkedinIn size={16} />
+                  </a>
+                  <a href="https://id.pinterest.com/">
+                    <FaPinterest size={16} />
+                  </a>
                 </span>
               </span>
             </div>
