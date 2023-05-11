@@ -114,6 +114,18 @@
                         }
                     }
                 }
+                .back {
+                    height: 40px;
+                    width: 100px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    margin-top: 30px;
+                    color: white;
+                    background: #1e809e;
+                    border: 0;
+                    border-bottom: 3px solid #080808;
+                    outline: 0;
+                }
 
                 .divider {
                     margin: 20px 0;

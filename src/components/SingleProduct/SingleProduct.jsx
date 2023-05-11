@@ -1,6 +1,7 @@
 import React from "react";
-import { useContext, useState } from "react";
-import { Context } from "../../utils/context";
+// import { useContext, useState } from "react";
+// import { Context } from "../../utils/context";
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
@@ -10,7 +11,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaPinterest,
-  FaCartPlus,
+  //FaCartPlus,
 } from "react-icons/fa";
 import "./SingleProduct.scss";
 
@@ -28,6 +29,8 @@ const SingleProduct = () => {
     )}`;
     window.open(url);
   };
+
+  const navigate = useNavigate();
   // const decrement = () => {
   //   setQuantity((prevState) => {
   //     if (prevState === 1) return 1;
@@ -98,6 +101,9 @@ const SingleProduct = () => {
                   </a>
                 </span>
               </span>
+              <button className="back" onClick={() => navigate("/")}>
+                Back
+              </button>
             </div>
           </div>
         </div>
