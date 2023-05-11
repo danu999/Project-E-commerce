@@ -1,4 +1,4 @@
-After Clone this project, don't forget to install node-module :
+# After Clone this project, don't forget to install node-module :
 ### `npm i`
 
 # Getting Started with Frontend Project
